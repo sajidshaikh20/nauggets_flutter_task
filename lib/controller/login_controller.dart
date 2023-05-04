@@ -36,7 +36,7 @@ class LoginController extends GetxController {
         passwordController.clear();
         Get.off(Homeview());
         Get.snackbar("Login", "Login successfully",
-            snackPosition: SnackPosition.BOTTOM);
+            snackPosition: SnackPosition.TOP);
       } else {
         throw jsonDecode(response.body)["Message"] ?? "Invalid Credentials ";
       }
